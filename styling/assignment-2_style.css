@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    height: 25%;
+    
+    background-color: #1F2937;
+    color: white;
+}
+
+.logo {
+    height: 20px;
+    width: 100px;
+}

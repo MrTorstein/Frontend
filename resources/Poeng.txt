@@ -1,0 +1,4 @@
+Poengtabell
+
+Plass    Navn        Poeng
+1.       Torstein    1

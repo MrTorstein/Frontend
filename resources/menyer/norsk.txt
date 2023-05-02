@@ -1,0 +1,16 @@
+#################################
+#                               #
+#          Pokemonquiz          #
+#                               #
+#                               #
+#          Muligheter:          #
+#          Start quiz           #
+#          Endre språk          #
+#        Se poengtabell         #
+#                               #
+#                               #
+#    Skrive hvilken mulighet    #
+#    du velger eller avslutt    #
+#    for å lukke programmet     #
+#                               #
+#################################

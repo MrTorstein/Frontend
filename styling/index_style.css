@@ -3,7 +3,7 @@ body, html {
 }
 
 body {
-    background-image: url("C:/Users/Torstein/Pictures/Bakgrunnsbilder/HI flag.png");
+    background-image: url("../images/HI flag.png");
     background-color: orange;
     background-size: cover;
     background-position: center;

@@ -31,9 +31,8 @@ function playerPlay() { // Gathers player input with prompt() and handles user e
             user_input = prompt(input_text).toLowerCase();
         }
         catch (TypeError) {
-            console.log("If you want to exit, please input exit in input window.")
-            input_text = input_text.slice(0, 20) + "exit, " + input_text.slice(20)
-            user_input = false;
+            console.log("If you want to exit, just input exit.")
+            user_input = "exit";
             
         }
         switch (user_input) {

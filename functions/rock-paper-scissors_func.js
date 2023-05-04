@@ -33,7 +33,6 @@ function playerPlay() { // Gathers player input with prompt() and handles user e
         catch (TypeError) {
             console.log("If you want to exit, just input exit.")
             user_input = "exit";
-            
         }
         switch (user_input) {
             case "rock":
@@ -169,14 +168,18 @@ the most points.`);
                 computer_score += 1;
                 break;
             case "both":
-                i--;
                 break;
             default:
                 console.log("Something went wrong!");
         }
     }
     
-    if (player_score > computer_score) {
+    if (player_score == computer_score) {
+        console.log("Its a tie! Your score is " + player_score + ". Computers score is " + computer_score);
+        console.log("Starting another round for you!")
+        game();
+    }
+    else if (player_score > computer_score) {
         console.log("You won! Your score is " + player_score + ". Computers score is " + computer_score);
     }
     else if (player_score < computer_score) {
@@ -184,6 +187,33 @@ the most points.`);
     }
     else {
         console.log("Something went wrong =(!");
+    }
+    
+    // Checking if user wants another round
+    let user_input = false;
+    
+    while (user_input == false) {
+        try {
+            user_input = prompt("Do you want to start another round? Yes or No: ").toLowerCase();
+        }
+        catch (TypeError) {
+            console.log("If you want to exit, just input no.");
+            console.log("Exiting...");
+            user_input = "no";
+        }
+        switch (user_input) {
+            case "yes":
+                game();
+                break;
+            case "no":
+                console.log("Exiting...");
+                break;
+            case false:
+                break;
+            default:
+                console.log("Invalid input! Please choose either Yes or No");
+                user_input = false;
+        }
     }
 }
 
